@@ -1,0 +1,151 @@
+.header {
+    height: 100px;
+    border: 1px solid #989393;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper {
+    width: 1300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+}
+
+
+.logo-wrapper {
+    width: 278px;
+    border: solid #989393;
+    border-width: 0 1px;
+    padding: 30px;
+    position: relative;
+}
+
+.logo-wrapper:before,
+.logo-wrapper:after,
+.logo-image:before,
+.logo-image:after {
+    content: url("corner.svg");
+    position: absolute;
+
+}
+
+.logo-image img {
+    width: auto;
+}
+
+.logo-wrapper:before {
+    top: -12px;
+    right: 0;
+}
+
+.logo-image:before {
+    bottom: -11px;
+    left: -2px;
+    transform: rotate(180deg);
+}
+
+.logo-wrapper:after {
+    top: -11px;
+    left: -4px;
+    transform: rotate(-90deg);
+}
+
+.logo-image:after {
+    bottom: -9px;
+    transform: rotate(90deg);
+    right: -3px;
+}
+
+.menu {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+@media screen and   (max-width: 320px) {
+    .header, .header-wrapper, .menu {
+        flex-direction: column;
+        width: auto;
+        margin: 0;
+    }
+
+    .logo-image img {
+        width: 70vw;
+    }
+
+
+    .header {
+        border: none;
+    }
+
+
+    .logo-wrapper {
+        padding: 15px;
+        border-width: 2px;
+        width: auto;
+    }
+
+    .logo-image {
+        width: auto;
+    }
+
+    .menu {
+        margin-top: 5%;
+    }
+
+
+}
+
+@media screen and   (min-width: 321px ) and  (max-width: 375px) {
+    .header, .header-wrapper, .menu {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .logo-wrapper {
+        width: auto;
+    }
+}
+
+
+@media screen and   (min-width: 376px ) and  (max-width: 425px) {
+    .header, .header-wrapper, .menu {
+        flex-direction: column;
+        width: auto;
+    }
+
+}
+
+@media screen and   (min-width: 426px ) and  (max-width: 768px) {
+    .header, .header-wrapper, .menu {
+        flex-direction: column;
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .header-wrapper {
+        width: auto;
+        display: block;
+    }
+
+    .logo-wrapper {
+        width: auto;
+    }
+
+}
+
+

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 7" width="7" height="7">
+	<title>угл4</title>
+	<defs>
+		<image width="7" height="7" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAABHNCSVQICAgIfAhkiAAAABpJREFUCJlj/P///38GUsH/////M+FTMBCSAG/XCAR1VppNAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="corner" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

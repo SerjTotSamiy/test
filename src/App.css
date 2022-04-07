@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap);
+
+.App {
+    text-align: center;
+    background: url("./background.webp");
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+body {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 320px) {
+    .App {
+        height: auto;
+    }
+}
+
+@media screen and   (min-width: 321px ) and  (max-width: 375px) {
+    .App {
+        height: auto;
+    }
+}
+
